@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;1,200&display=swap');
+
+
+
+*{ padding: 0%;
+margin: 0%;
+box-sizing: border-box;
+font-size: 62.5%;
+}
+
+body{ font-family: 'Poppins';}
+#grid{display: grid;
+opacity: 1;
+grid-template-columns:  10% 73% 15%;
+grid-template-areas: 
+'a a a '
+'b c d'
+'e e e ';
+gap: 10px;
+transition: 1s all;
+grid-template-rows: 100px  400px 95px ;
+ 
+
+}
+
+/*------------Header
+-----------------*/
+
+header{ 
+    
+background-color: #211D1A;
+color: #e9e7e7;
+grid-area: a;
+;
+text-align: center;
+padding: 30px 0px 0px;
+}
+
+header h1{
+font-weight: 300;
+font-size:2.3rem ;
+letter-spacing: 0.3px;}
+
+
+
+
+/*---------nav
+------*/
+nav{
+background-color:#E0BA89;
+color: #4F4549;
+border-radius: 5px;
+border: none;
+grid-area:b
+}
+li{
+width: 100%;
+font-size: 1.6rem;
+cursor: pointer;
+padding: 20px 5px;
+margin-bottom: 5px;
+
+}
+li:hover{
+color: black; 
+text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.26);
+transition: 0.31s all;
+
+}
+
+
+
+
+/*--------------section
+----------------------------*/
+
+section{
+   
+background-color:#E0BA89;
+
+grid-area: c
+;
+transition: 1s all;
+}
+div #imagem-lua{background-image: url(../imagens/fases.jpg);
+height: 250px;
+width: 360px;
+margin: auto;
+background-size: cover;
+background-repeat: no-repeat;}
+
+section p {
+font-size: 1.6rem;}
+
+section p span{font-size: 1.8rem;
+font-weight: bold;}
+section .textos { padding:10px}
+
+/*--------------ASIDE
+----------------------------*/
+aside{ 
+background-color:#E0BA89;
+grid-area:d;
+font-size: 1.6rem;
+padding: 5px;
+
+} 
+
+aside h2{ 
+font-size: 1.6rem; text-align: center; padding: 20px 0px;}
+
+
+aside p{ 
+font-size: 1.3rem; padding: 0px 10px;}
+
+
+aside a{ 
+text-decoration: none;
+color: #000; font-size: 1.3rem; }
+
+aside a:hover{text-decoration: underline; color: #211D1A;}
+
+
+/*--------------footer
+----------------------------*/
+
+footer{ 
+background-color:#8B5529;
+text-align: center;
+grid-area:e;
+padding: 5px;}
+
+footer p{ padding: 5px;
+font-size: 1.6rem;
+opacity: 0.5;
+color: #FFF;
+}
+footer a{
+text-decoration: none;
+color: #FFF;
+font-size: 1.6rem;
+}
+
+footer  i {color: #E0BA89;
+font-size: 1.8rem;margin-right: 5px;
+cursor: pointer;}
