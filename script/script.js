@@ -1,4 +1,4 @@
-/* prompt inicio 
+
 var senha= prompt('digite a senha')
 
 if (senha!='tstno')
@@ -8,7 +8,7 @@ if (senha!='tstno')
 else
     {agaum= document.querySelector('#grid')
     agaum.style.opacity='1'
-}//falta colocar opacity 0 no CSS*/
+}
 
 /*------------------Functions-------------
 ---------*/
